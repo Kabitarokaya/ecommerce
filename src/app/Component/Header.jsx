@@ -15,10 +15,6 @@ import { GoSearch } from "react-icons/go";
 import { FaHeart } from "react-icons/fa";
 import { useCart } from './CartContext';
 // import CartContext from "./CartContext";
-import { FaRegUserCircle } from "react-icons/fa";
-import { FaBook } from "react-icons/fa";
-import { IoBagCheckSharp } from "react-icons/io5";
-import { CiSettings } from "react-icons/ci";
 
 function Header() {
       const { state } = useCart();
@@ -104,11 +100,11 @@ function Header() {
                                                     <p className='font-bold text-blue-700 cursor-pointer'>Sign Up</p>
                                                 </div>
                                                 <ul className="p-2">
-                                                    <li className='flex gap-2 py-1 cursor-pointer'> <FaRegUserCircle className='size-[20px]' />My Profile</li>
-                                                    <li className='flex gap-2 py-1 cursor-pointer'> <FaBook  className='size-[20px]'/>My Address Book</li>
+                                                    <li className='flex gap-2 py-1 cursor-pointer'> My Profile</li>
+                                                    <li className='flex gap-2 py-1 cursor-pointer'> My Address Book</li>
                                                     <li className='flex gap-2 py-1 cursor-pointer'>Wishlist</li>
-                                                  <li className='flex gap-2 py-1 cursor-pointer'><IoBagCheckSharp className='size-[20px]'/>My Order</li>
-                                                    <li className='flex gap-2 py-1 cursor-pointer'><CiSettings className='size-[20px]'/>Settings</li>
+                                                  <li className='flex gap-2 py-1 cursor-pointer'>My Order</li>
+                                                    <li className='flex gap-2 py-1 cursor-pointer'>Settings</li>
                                                 </ul>
                                             </div>
                                         )}
