@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-// import CartContext from '../../Component/CartContext'; 
+import { useCart } from '../Component/CartContext';
 
 function page() {
-  //   let { state, dispatch } = useContext(CartContext);
+ let { state, dispatch } = useCart;
 
   return (
     <>
@@ -28,7 +28,7 @@ function page() {
                   </tr>
                 </thead>
 
-                {/* <tbody className="bg-white divide-y divide-gray-200 whitespace-nowrap">
+                 <tbody className="bg-white divide-y divide-gray-200 whitespace-nowrap">
                   {state.cart.map((a) => (
                     <tr key={a.id}>
                       <td className="px-4 py-4 text-sm text-slate-900 font-medium">{a.id}</td>
@@ -43,7 +43,7 @@ function page() {
                       </td>
                     </tr>
                   ))}
-                </tbody> */}
+                </tbody> 
               </table>
             </div>
           </div>
