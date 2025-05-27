@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useCart } from '../Component/CartContext';
 
 function page() {
- let { state, dispatch } = useCart;
+ let { state, dispatch } = useCart();
 
   return (
     <>
